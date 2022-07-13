@@ -1,0 +1,49 @@
+{
+    "html": {
+        "avatarOverlay": "수정"
+    },
+    "js": {
+        "login": {
+            "error": {
+                "invalidValue": "* 알수없는 값",
+                "requiredValue": "* 필수 값",
+                "userMigrated": {
+                    "title": "로그인 실패:<br> 오류",
+                    "desc": "만료된 계정으로 로그인을 시도하셨습니다. 계정 이메일을 사용자 이름으로 다시 시도해주세요."
+                },
+                "invalidCredentials": {
+                    "title": "로그인 실패:<br> 오류",
+                    "desc": "입력하신 계정 이메일 또는 비밀번호가 맞지 않습니다. 다시 시도해주세요."
+                },
+                "rateLimit": {
+                    "title": "로그인 실패:<br>많은 로그인 시도",
+                    "desc": "최근 이 계정으로 많은 로그인 시도가 있었습니다. 나중에 다시 시도해주세요."
+                },
+                "noInternet": {
+                    "title": "로그인 실패:<br>인터넷 연결 없음",
+                    "desc": "인터넷 연결 후 로그인을 다시 시도해주세요."
+                },
+                "authDown": {
+                    "title": "로그인 실패:<br>인증서버 오프라인",
+                    "desc": "모장 인증서버에 연결할 수 없습니다. 나중에 다시 시도해주세요."
+                },
+                "notPaid": {
+                    "title": "로그인 실패:<br>구매되지 않은 계정",
+                    "desc": "해당 계정은 마인크래프트가 구매되지 않은 계정입니다."
+                },
+                "unknown": {
+                    "title": "로그인 실패:<br>알 수 없는 오류"
+                }
+            },
+            "login": "로그인",
+            "loggingIn": "로그인 중",
+            "success": "성공!",
+            "tryAgain": "재시도"
+        },
+        "landing": {
+            "launch": {
+                "pleaseWait": "기다려 주세요"
+            }
+        }
+    }
+}

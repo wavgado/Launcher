@@ -1,0 +1,53 @@
+{
+  "name": "demonslayerlauncher",
+  "version": "1.0.4",
+  "productName": "Demon Slayer Launcher",
+  "description": "Minecraft Launcher",
+  "author": "gbeag (https://github.com/gbeag/)",
+  "license": "UNLICENSED",
+  "homepage": "https://github.com/gbeag/launcher",
+  "bugs": {
+    "url": "https://github.com/gbeag/launcher/issues"
+  },
+  "private": true,
+  "main": "index.js",
+  "scripts": {
+    "start": "electron .",
+    "dist": "electron-builder build",
+    "dist:win": "npm run dist -- -w -p always",
+    "dist:mac": "npm run dist -- -m -p always",
+    "dist:linux": "npm run dist -- -l -p always",
+    "lint": "eslint --config .eslintrc.json ."
+  },
+  "engines": {
+    "node": "16.x.x"
+  },
+  "dependencies": {
+    "@electron/remote": "^2.0.8",
+    "adm-zip": "^0.5.9",
+    "async": "^3.2.4",
+    "discord-rpc-patch": "^4.0.1",
+    "ejs": "^3.1.8",
+    "ejs-electron": "^2.1.1",
+    "electron-updater": "^5.0.5",
+    "fs-extra": "^10.1.0",
+    "github-syntax-dark": "^0.5.0",
+    "got": "^12.1.0",
+    "helios-core": "~0.1.0",
+    "jquery": "^3.6.0",
+    "node-stream-zip": "^1.15.0",
+    "request": "^2.88.2",
+    "semver": "^7.3.7",
+    "tar-fs": "^2.1.1",
+    "winreg": "^1.2.4"
+  },
+  "devDependencies": {
+    "electron": "^19.0.8",
+    "electron-builder": "^23.1.0",
+    "eslint": "^8.19.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gbeag/launcher.git"
+  }
+}
