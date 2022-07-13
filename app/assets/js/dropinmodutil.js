@@ -155,8 +155,8 @@ exports.isDropinModEnabled = function(fullName){
 exports.scanForShaderpacks = function(instanceDir){
     const shaderDir = path.join(instanceDir, SHADER_DIR)
     const packsDiscovered = [{
-        fullName: 'OFF',
-        name: 'Off (Default)'
+        fullName: '끄기',
+        name: '끄기 (기본값)'
     }]
     if(fs.existsSync(shaderDir)){
         let modCandidates = fs.readdirSync(shaderDir)

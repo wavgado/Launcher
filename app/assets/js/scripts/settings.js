@@ -639,7 +639,7 @@ function populateAuthAccounts(){
                 <div class="settingsAuthAccountActions">
                     <button class="settingsAuthAccountSelect" ${selectedUUID === acc.uuid ? 'selected>선택된 계정 &#10004;' : '>계정 선택'}</button>
                     <div class="settingsAuthAccountWrapper">
-                        <button class="settingsAuthAccountLogOut">Log Out</button>
+                        <button class="settingsAuthAccountLogOut">로그아웃</button>
                     </div>
                 </div>
             </div>
@@ -1080,10 +1080,6 @@ function loadSelectedServerOnModsTab(){
 }
 
 // Bind functionality to the server switch button.
-document.getElementById('settingsSwitchServerButton').addEventListener('click', (e) => {
-    e.target.blur()
-    toggleServerSelection(true)
-})
 
 /**
  * Save mod configuration for the current selected server.
@@ -1328,9 +1324,9 @@ function populateJavaExecDetails(execPath){
         if(v.valid){
             const vendor = v.vendor != null ? ` (${v.vendor})` : ''
             if(v.version.major < 9) {
-                settingsJavaExecDetails.innerHTML = `Selected: Java ${v.version.major} Update ${v.version.update} (x${v.arch})${vendor}`
+                settingsJavaExecDetails.innerHTML = `선택됨: Java ${v.version.major} Update ${v.version.update} (x${v.arch})${vendor}`
             } else {
-                settingsJavaExecDetails.innerHTML = `Selected: Java ${v.version.major}.${v.version.minor}.${v.version.revision} (x${v.arch})${vendor}`
+                settingsJavaExecDetails.innerHTML = `선택됨: Java ${v.version.major}.${v.version.minor}.${v.version.revision} (x${v.arch})${vendor}`
             }
         } else {
             settingsJavaExecDetails.innerHTML = '잘못된 선택'
@@ -1489,7 +1485,7 @@ function populateSettingsUpdateInformation(data){
             settingsUpdateButtonStatus('다운로드 중..', true)
         }
     } else {
-        settingsUpdateTitle.innerHTML = '최신 버전으로 실행되고 있습니다'
+        settingsUpdateTitle.innerHTML = '최신 버전으로 실행되고 있습니다.'
         settingsUpdateChangelogCont.style.display = 'none'
         populateVersionInformation(remote.app.getVersion(), settingsUpdateVersionValue, settingsUpdateVersionTitle, settingsUpdateVersionCheck)
         settingsUpdateButtonStatus('업데이트 확인', false, () => {
