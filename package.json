@@ -1,9 +1,9 @@
 {
   "name": "demonslayerlauncher",
-  "version": "1.0.0",
+  "version": "0.1",
   "productName": "Demon Slayer Launcher",
   "description": "Minecraft Launcher",
-  "author": "gbeag (https://github.com/gbeag/)",
+  "author": "wavgado (https://github.com/wavgado/)",
   "license": "UNLICENSED",
   "homepage": "https://github.com/wavgado/launcher",
   "bugs": {
