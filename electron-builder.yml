@@ -8,7 +8,7 @@ asar: true
 compression: 'maximum'
 
 files:
-  - '!{dist,.gitignore,.vscode,docs,dev-app-update.yml,.nvmrc,.eslintrc.json}'
+  - '!{dist,.gitignore,.vscode,docs,dev-app-update.yml,.nvmrc,.eslintrc.json,.github,.eslintignore}'
 
 extraResources:
   - 'libraries'
@@ -22,7 +22,7 @@ win:
 # Windows Installer Configuration
 nsis:
   oneClick: false
-  perMachine: true
+  perMachine: false
   allowElevation: true
   allowToChangeInstallationDirectory: true
 
