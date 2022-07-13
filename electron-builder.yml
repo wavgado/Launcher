@@ -39,8 +39,8 @@ mac:
 # Linux Configuration
 linux: 
   target: 'AppImage'
-  maintainer: 'gbeag'
-  vendor: 'gbeag'
+  maintainer: 'wavgado'
+  vendor: 'wavgado'
   synopsis: 'Demon Slayer Launcher'
   description: 'Minecraft Launcher'
   category: 'Game'
